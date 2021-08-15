@@ -9,33 +9,42 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	<link type="text/css" rel="stylesheet" href="../CSS/style.css">
 	<script src="../JS/myscripts.js"></script>
-	<title>Guessing Game</title>
+	<title>Login Page</title>
 </head>
 <body>
-    <div class="container-fluid bg-container">
-        <div class="row bg-white">
-            <div class="col-12 col-md-6 m-auto bg-white pt-5 pb-5">
-                <img class="guess-game-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png" />
-                <p class="text-center game-description">
-                    Find out the right number between 1 to 100
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 guess-bg-container text-center">
-                <h1 class="guess-heading">
-                    Guess The Number
-                    <img class="guess-number-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png" />
-                </h1>
-                <input type="text" class="user-input" id="userInput" />
-                <div>
-                    <button class="btn btn-info check-guess" onclick="checkGuess()">
-                        Check
-                    </button>
+    <script src="https://kit.fontawesome.com/f05c8837f2.js" crossorigin="anonymous"></script>
+    <div class="container" id="container">
+        
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <p class="game-result" id="gameResult"></p>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Already with us? <br>Sign in to your account</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome User!</h1>
+                    <p>Create your account to start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
